@@ -3,15 +3,19 @@ import javax.swing.*;
 public class CardChooserPanel extends JPanel {
 
     private JButton jButton;
-    private CardImagePanel cardImagePanel;
+    private JPanel cardImagePanel;
 
     public CardChooserPanel() {
         super(true);
-        jButton = new JButton("Choose Card");
         cardImagePanel = new CardImagePanel();
-        this.add(jButton);
-        this.add(cardImagePanel);
-        bindBtnToFileChooser();
+        jButton = new CardChooserButton("Choose Card", this, cardImagePanel);
+        addComponentToPanel(jButton, cardImagePanel);
+    }
+
+    public void addComponentToPanel(JComponent... components) {
+        for(JComponent jComponent : components) {
+            this.add(jComponent);
+        }
     }
 
     public static void renderCardChooserPanel() {
@@ -20,13 +24,5 @@ public class CardChooserPanel extends JPanel {
         jFrame.setSize(900, 600);
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
-    }
-
-    private void bindBtnToFileChooser() {
-        jButton.addActionListener(
-            actionListener -> {
-                new CardFileChooserDialog().showOpenDialog(this);
-            }
-        );
     }
 }

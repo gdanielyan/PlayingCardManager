@@ -9,11 +9,18 @@ public class CardImagePanel extends JPanel{
         super();
     }
 
+    public CardImagePanel(BufferedImage bufferedImage) {
+        super();
+        this.bufferedImage = bufferedImage;
+    }
+
     public BufferedImage getBufferedImage() {
         return bufferedImage;
     }
 
     public void setBufferedImage(BufferedImage bufferedImage) {
         this.bufferedImage = bufferedImage;
+
     }
+
 }
