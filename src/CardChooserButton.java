@@ -9,9 +9,11 @@ public class CardChooserButton extends JButton {
 
     private JFileChooser cardChooserDialog;
     private CardImagePanel cardImagePanel;
+    private JFrame jFrame;
 
-    public CardChooserButton(String label, JPanel parentPanel, JPanel cardImagePanel) {
+    public CardChooserButton(String label, JPanel parentPanel, JPanel cardImagePanel, JFrame jFrame) {
         super(label);
+        this.jFrame = jFrame;
         this.cardImagePanel = (CardImagePanel) cardImagePanel;
         this.addActionListener(new ButtonListener(parentPanel));
     }
@@ -33,6 +35,9 @@ public class CardChooserButton extends JButton {
                 if(success == 0) {
                     file = cardChooserDialog.getSelectedFile();
                     cardImagePanel.setBufferedImage(ImageIO.read(file));
+                    cardImagePanel.revalidate();
+                    cardImagePanel.invalidate();
+                    cardImagePanel.repaint();
                 }
             } catch(Exception ex) {
                 ex.printStackTrace();

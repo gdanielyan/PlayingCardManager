@@ -1,14 +1,16 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class CardChooserPanel extends JPanel {
 
     private JButton jButton;
+    private static JFrame jFrame;
     private JPanel cardImagePanel;
 
     public CardChooserPanel() {
         super(true);
         cardImagePanel = new CardImagePanel();
-        jButton = new CardChooserButton("Choose Card", this, cardImagePanel);
+        jButton = new CardChooserButton("Choose Card", this, cardImagePanel, jFrame);
         addComponentToPanel(jButton, cardImagePanel);
     }
 
@@ -19,9 +21,11 @@ public class CardChooserPanel extends JPanel {
     }
 
     public static void renderCardChooserPanel() {
-        JFrame jFrame = new JFrame();
+        jFrame = new JFrame();
+        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jFrame.setContentPane(new CardChooserPanel());
-        jFrame.setSize(900, 600);
+        jFrame.setLayout(new FlowLayout(FlowLayout.LEFT));
+        jFrame.setSize(400, 500);
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
     }
