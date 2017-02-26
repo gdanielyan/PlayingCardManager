@@ -1,3 +1,7 @@
+package components;
+
+import components.panels.CardImagePanel;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -36,8 +40,6 @@ public class CardChooserButton extends JButton {
                     file = cardChooserDialog.getSelectedFile();
                     cardImagePanel.setBufferedImage(ImageIO.read(file));
                     cardImagePanel.revalidate();
-                    cardImagePanel.invalidate();
-                    cardImagePanel.repaint();
                 }
             } catch(Exception ex) {
                 ex.printStackTrace();

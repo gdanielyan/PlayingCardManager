@@ -1,3 +1,5 @@
+package components.panels;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -26,7 +28,7 @@ public class CardImagePanel extends JPanel{
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         if(bufferedImage != null){
-            g.drawImage(getBufferedImage(), 0, 0, bufferedImage.getWidth()/2, bufferedImage.getHeight()/2, null);
+            g.drawImage(getBufferedImage(), 0, 0, bufferedImage.getWidth(), bufferedImage.getHeight(), null);
         }
     }
 
