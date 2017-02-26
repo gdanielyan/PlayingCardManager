@@ -1,5 +1,7 @@
 package components.panels;
 
+import components.CardMover;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -7,14 +9,11 @@ import java.awt.image.BufferedImage;
 public class CardImagePanel extends JPanel{
 
     private BufferedImage bufferedImage;
+    private CardMover cardMover;
 
     public CardImagePanel() {
         super();
-    }
-
-    public CardImagePanel(BufferedImage bufferedImage) {
-        super(true);
-        this.bufferedImage = bufferedImage;
+        this.cardMover = new CardMover(this);
     }
 
     public BufferedImage getBufferedImage() {

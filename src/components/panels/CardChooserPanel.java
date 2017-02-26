@@ -19,10 +19,22 @@ public class CardChooserPanel extends JPanel {
 
     public CardChooserPanel() {
         super(true);
-        cardChooserControlPanel = new CardChooserControlPanel();
-        cardImagePanel = new CardImagePanel();
+
+        this.setLayout(null);
+        this.setLocation(50,100);
+        this.setPreferredSize(this.getPreferredSize());
         map = new SuitFaceMap();
+
+        cardChooserControlPanel = new CardChooserControlPanel();
+        cardChooserControlPanel.setBounds(10,10, cardChooserControlPanel.getPreferredSize().width, cardChooserControlPanel.getPreferredSize().height);
+
+        cardImagePanel = new CardImagePanel();
+        cardImagePanel.setBounds(10, 50, 300, 700);
+
         jButton = new CardChooseControlButton("Choose", cardChooserControlPanel, cardImagePanel, map);
+        jButton.setBounds(cardChooserControlPanel.getPreferredSize().width + 15, 15, jButton.getPreferredSize().width, jButton.getPreferredSize().height);
+
+
         addComponentToPanel(cardChooserControlPanel, jButton, cardImagePanel);
     }
 
@@ -36,7 +48,7 @@ public class CardChooserPanel extends JPanel {
         jFrame = new JFrame();
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jFrame.setContentPane(new CardChooserPanel());
-        jFrame.setSize(400, 500);
+        jFrame.setSize(800, 800);
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
     }

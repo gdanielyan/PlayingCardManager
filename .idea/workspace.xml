@@ -2,73 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40adf390-589f-4eaa-8da6-a7e5fe8d5ee2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cards/Face.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cards/Suit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cards/SuitFace.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cards/SuitFaceMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/CardChooseControlButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/panels/CardChooserControlPanel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PlayingCardManager/CardChooserPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PlayingCardManager/CardFileChooserDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PlayingCardManager/CardImagePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/10_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/10_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/10_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/10_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/2_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/2_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/2_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/2_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/3_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/3_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/3_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/3_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/4_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/4_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/4_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/4_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/5_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/5_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/5_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/5_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/6_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/6_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/6_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/6_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/7_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/7_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/7_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/7_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/8_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/8_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/8_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/8_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/9_of_clubs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/9_of_diamonds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/9_of_hearts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/9_of_spades.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/ace_of_spades2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/black_joker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/jack_of_clubs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/jack_of_diamonds2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/jack_of_hearts2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/jack_of_spades2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/king_of_clubs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/king_of_diamonds2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/king_of_hearts2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/king_of_spades2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/queen_of_clubs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/queen_of_diamonds2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/queen_of_hearts2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/queen_of_spades2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/cards/red_joker.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CardChooserButton.java" afterPath="$PROJECT_DIR$/src/components/CardChooserButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CardChooserPanel.java" afterPath="$PROJECT_DIR$/src/components/panels/CardChooserPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CardFileChooserDialog.java" afterPath="$PROJECT_DIR$/src/components/CardFileChooserDialog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CardImagePanel.java" afterPath="$PROJECT_DIR$/src/components/panels/CardImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayingCardManager/PlayingCardManager.class" afterPath="$PROJECT_DIR$/out/production/PlayingCardManager/PlayingCardManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/CardMover.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PlayingCardManager.java" afterPath="$PROJECT_DIR$/src/PlayingCardManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/panels/CardChooserPanel.java" afterPath="$PROJECT_DIR$/src/components/panels/CardChooserPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/panels/CardImagePanel.java" afterPath="$PROJECT_DIR$/src/components/panels/CardImagePanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,12 +21,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CardChooserPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CardChooserPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/panels/CardChooserPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="450">
+              <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardMover.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/CardMover.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,14 +93,16 @@
         <option value="$PROJECT_DIR$/src/components/CardFileChooserDialog.java" />
         <option value="$PROJECT_DIR$/src/playingcards/SuitFaceMap.java" />
         <option value="$PROJECT_DIR$/src/PlayingCardManager.java" />
-        <option value="$PROJECT_DIR$/src/components/panels/CardImagePanel.java" />
-        <option value="$PROJECT_DIR$/src/cards/SuitFace.java" />
         <option value="$PROJECT_DIR$/src/cards/Face.java" />
         <option value="$PROJECT_DIR$/src/cards/SuitFaceMap.java" />
         <option value="$PROJECT_DIR$/src/cards/Suit.java" />
         <option value="$PROJECT_DIR$/src/components/panels/CardChooserControlPanel.java" />
         <option value="$PROJECT_DIR$/src/components/CardChooseControlButton.java" />
+        <option value="$PROJECT_DIR$/src/cards/SuitFace.java" />
+        <option value="$PROJECT_DIR$/src/components/MouseDragListener.java" />
         <option value="$PROJECT_DIR$/src/components/panels/CardChooserPanel.java" />
+        <option value="$PROJECT_DIR$/src/components/CardMover.java" />
+        <option value="$PROJECT_DIR$/src/components/panels/CardImagePanel.java" />
       </list>
     </option>
   </component>
@@ -724,12 +675,12 @@
       <workItem from="1487660761958" duration="4269000" />
       <workItem from="1487693136051" duration="24000" />
       <workItem from="1487815398286" duration="6357000" />
-      <workItem from="1488052282852" duration="16059000" />
+      <workItem from="1488052282852" duration="20760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35722000" />
+    <option name="totallyTimeSpent" value="40423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1131" extended-state="6" />
@@ -744,7 +695,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41770935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41770935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -803,9 +754,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,9 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,9 +806,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,43 +951,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cards/SuitFace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/panels/CardImagePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding>
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cards/Face.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cards/SuitFaceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,29 +975,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CardChooseControlButton.java">
+    <entry file="file://$PROJECT_DIR$/src/components/panels/CardChooserControlPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="270">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cards/SuitFace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cards/SuitFaceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/panels/CardChooserControlPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/components/MouseDragListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="2260" column="37" lean-forward="true" selection-start-line="2260" selection-start-column="37" selection-end-line="2260" selection-end-column="37" />
+          <folding>
+            <element signature="e#77478#77479#0" expanded="true" />
+            <element signature="e#77522#77523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CardChooseControlButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/panels/CardChooserPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="450">
+          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/panels/CardImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CardMover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
