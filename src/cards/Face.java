@@ -15,7 +15,6 @@ public enum Face {
     EIGHT("eight"),
     NINE("nine"),
     TEN("ten"),
-    ELEVEN("eleven"),
     JACK("jack"),
     QUEEN("queen"),
     KING("king");

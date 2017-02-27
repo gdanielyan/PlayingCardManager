@@ -6,7 +6,7 @@ import cards.SuitFace;
 
 import javax.swing.*;
 
-public class CardChooserControlPanel extends JPanel{
+public class CardChooserControlPanel extends JPanel {
 
     private JComboBox<Suit> suitList;
     private JComboBox<Face> faceList;

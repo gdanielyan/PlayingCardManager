@@ -1,4 +1,4 @@
-package components;
+package components.dialogs;
 
 import javax.swing.*;
 import java.io.File;

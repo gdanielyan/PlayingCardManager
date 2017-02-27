@@ -1,4 +1,4 @@
-package components;
+package components.listeners;
 
 import components.panels.CardImagePanel;
 
@@ -8,14 +8,14 @@ import java.awt.event.MouseEvent;
 /**
  *
  */
-public class CardMover extends MouseAdapter {
+public class CardMoverListener extends MouseAdapter {
 
     private CardImagePanel cardImagePanel;
     private int startX;
     private int startY;
 
 
-    public CardMover(CardImagePanel panel){
+    public CardMoverListener(CardImagePanel panel){
         this.cardImagePanel = panel;
         this.cardImagePanel.addMouseListener(this);
         this.cardImagePanel.addMouseMotionListener(this);
@@ -24,7 +24,6 @@ public class CardMover extends MouseAdapter {
     public void mousePressed(MouseEvent e) {
         this.startX = e.getX();
         this.startY = e.getY();
-
     }
 
     public void mouseDragged(MouseEvent e) {

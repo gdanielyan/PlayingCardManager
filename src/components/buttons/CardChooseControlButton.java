@@ -1,4 +1,4 @@
-package components;
+package components.buttons;
 
 import cards.SuitFaceMap;
 import components.panels.CardChooserControlPanel;
@@ -7,12 +7,11 @@ import components.panels.CardImagePanel;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 
 /**
  *
  */
-public class CardChooseControlButton extends JButton{
+public class CardChooseControlButton extends JButton {
 
     private CardChooserControlPanel cardChooserControlPanel;
     private CardImagePanel cardImagePanel;

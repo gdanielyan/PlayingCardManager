@@ -1,5 +1,6 @@
-package components;
+package components.buttons;
 
+import components.dialogs.CardFileChooserDialog;
 import components.panels.CardImagePanel;
 
 import javax.imageio.ImageIO;
