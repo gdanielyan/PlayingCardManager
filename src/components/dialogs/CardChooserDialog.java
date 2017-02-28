@@ -20,13 +20,13 @@ public class CardChooserDialog extends JDialog {
     private SuitFaceMap map;
     private int numCards = 5;
 
-    public CardChooserDialog(CardChooserPanel cardChooserPanel, SuitFaceMap map) {
+    public CardChooserDialog(CardChooserPanel cardChooserPanel, SuitFaceMap map, CardImagePanel[] cardImagePanels) {
         super();
+        this.map = map;
+        this.cardChooserPanel = cardChooserPanel;
         setSize(500,500);
         setLocationRelativeTo(null);
-        this.add(new DialogContentPane());
-        this.cardChooserPanel = cardChooserPanel;
-        this.map = map;
+        this.add(new DialogContentPane(this, cardImagePanels));
     }
 
     private class ControlPanel extends JPanel {
@@ -36,8 +36,9 @@ public class CardChooserDialog extends JDialog {
             GridBagConstraints gridBagConstraints = new GridBagConstraints();
             controls = new CardChooserControlPanel[numCards];
             this.setLayout(layout);
+            CardChooserControlPanel cardChooserControlPanel;
             for(int i = 0; i < controls.length; i++) {
-                CardChooserControlPanel cardChooserControlPanel = new CardChooserControlPanel();
+                cardChooserControlPanel = new CardChooserControlPanel();
                 controls[i] = cardChooserControlPanel;
                 gridBagConstraints.gridx = 0;
                 gridBagConstraints.gridy = i;
@@ -47,9 +48,13 @@ public class CardChooserDialog extends JDialog {
     }
 
     private class ButtonPane extends JPanel {
-        public ButtonPane() {
+        CardChooserDialog dialog;
+        CardImagePanel[] cardImagePanels;
+        public ButtonPane(CardChooserDialog dialog, CardImagePanel[] cardImagePanels) {
             super(true);
             setBorder(BorderFactory.createEtchedBorder());
+            this.dialog = dialog;
+            this.cardImagePanels = cardImagePanels;
             btnOk = new JButton("Ok");
             btnCancel = new JButton("Cancel");
             bindButtons();
@@ -61,21 +66,27 @@ public class CardChooserDialog extends JDialog {
             btnOk.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    for(CardChooserControlPanel panel : controls){
-                        CardImagePanel cardImagePanel = new CardImagePanel();
-                        cardChooserPanel.addComponentToPanel(cardImagePanel);
-                        cardImagePanel.setBufferedImage(map.getValue(panel.getDisplayedCard()));
-                        cardImagePanel.revalidate();
-                        cardImagePanel.repaint();
-                        dispose();
-                        // need to save the card as well..
+                    for(int i = 0; i < numCards; i++) {
+                        controls[i].saveDisplayedCard();
+                        cardImagePanels[i].setBufferedImage(map.getValue(controls[i].getDisplayedCard()));
+                        cardImagePanels[i].revalidate();
+                        cardImagePanels[i].repaint();
+                        cardChooserPanel.setComponentZOrder(cardImagePanels[i], 0);
+                        cardChooserPanel.revalidate();
+                        cardChooserPanel.repaint();
                     }
+                    dialog.setVisible(false);
                 }
 
             });
             btnCancel.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    for(int i = 0; i < numCards; i++) {
+                        if(controls[i].getSavedCard() != null) {
+                            controls[i].restoreDisplayedCard();
+                        }
+                    }
                     dispose();
                 }
             });
@@ -84,11 +95,11 @@ public class CardChooserDialog extends JDialog {
     }
 
     private class DialogContentPane extends JPanel {
-        public DialogContentPane() {
+        public DialogContentPane(CardChooserDialog dialog, CardImagePanel[] cardImagePanels) {
             super(true);
             setLayout(new BorderLayout());
             add(new ControlPanel(), BorderLayout.CENTER);
-            add(new ButtonPane(), BorderLayout.SOUTH);
+            add(new ButtonPane(dialog, cardImagePanels), BorderLayout.SOUTH);
         }
     }
 

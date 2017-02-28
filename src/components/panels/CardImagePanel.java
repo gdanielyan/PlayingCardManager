@@ -11,9 +11,9 @@ public class CardImagePanel extends JPanel{
     private BufferedImage bufferedImage;
     private CardMoverListener cardMover;
 
-    public CardImagePanel() {
+    public CardImagePanel(CardChooserPanel parentPanel) {
         super();
-        this.cardMover = new CardMoverListener(this);
+        this.cardMover = new CardMoverListener(this, parentPanel);
     }
 
     public BufferedImage getBufferedImage() {

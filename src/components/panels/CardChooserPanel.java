@@ -1,17 +1,17 @@
 package components.panels;
 
 import cards.SuitFaceMap;
-import components.buttons.CardChooseControlButton;
-import components.listeners.ChooseMenuItemListener;
+import components.dialogs.CardChooserDialog;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class CardChooserPanel extends JPanel {
 
-    private JButton jButton;
     private static JFrame jFrame;
     private static JMenuBar jMenuBar;
-    private CardImagePanel cardImagePanel;
+    private CardImagePanel[] cardImagePanels;
 
     private SuitFaceMap map;
     private CardChooserControlPanel cardChooserControlPanel;
@@ -27,15 +27,14 @@ public class CardChooserPanel extends JPanel {
         cardChooserControlPanel = new CardChooserControlPanel();
         cardChooserControlPanel.setBounds(10,10, cardChooserControlPanel.getPreferredSize().width, cardChooserControlPanel.getPreferredSize().height);
 
-        cardImagePanel = new CardImagePanel();
-        cardImagePanel.setBounds(10, 50, 300, 700);
-
-        jButton = new CardChooseControlButton("Choose", cardChooserControlPanel, cardImagePanel, map);
-        jButton.setBounds(cardChooserControlPanel.getPreferredSize().width + 15, 15, jButton.getPreferredSize().width, jButton.getPreferredSize().height);
+        cardImagePanels = new CardImagePanel[5];
+        for(int i = 0; i < cardImagePanels.length; i++){
+            cardImagePanels[i] = new CardImagePanel(this);
+            cardImagePanels[i].setBounds(i * 25, i * 25, 250, 365);
+            addComponentToPanel(cardImagePanels[i]);
+        }
 
         createMenu(jFrame);
-
-        addComponentToPanel(cardChooserControlPanel, jButton, cardImagePanel);
     }
 
     public void addComponentToPanel(JComponent... components) {
@@ -57,7 +56,13 @@ public class CardChooserPanel extends JPanel {
         jMenuBar = new JMenuBar();
         JMenu jMenu = new JMenu("Cards");
         JMenuItem jMenuItem = new JMenuItem("Choose");
-        jMenuItem.addActionListener(new ChooseMenuItemListener(this, map));
+        CardChooserDialog cardChooserDialog = new CardChooserDialog(this, map, cardImagePanels);
+        jMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cardChooserDialog.setVisible(true);
+            }
+        });
         jMenu.add(jMenuItem);
         jMenuBar.add(jMenu);
         jFrame.setJMenuBar(jMenuBar);

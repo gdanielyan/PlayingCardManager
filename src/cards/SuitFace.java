@@ -11,15 +11,15 @@ public class SuitFace {
         this.face = face;
     }
 
-    public String toString() {
-        return "Suit " + suit.getSuit() + " Face: " + face.getFace();
-    }
-
     @Override
-    public boolean equals(Object other) {
-        String otherSuit = ((SuitFace)other).getSuit().toString();
-        String otherFace = ((SuitFace)other).getFace().toString();
-        return this.suit.toString().equals(otherSuit) && this.face.toString().equals(otherFace);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SuitFace)) return false;
+
+        SuitFace suitFace = (SuitFace) o;
+
+        if (getSuit() != suitFace.getSuit()) return false;
+        return getFace() == suitFace.getFace();
     }
 
     @Override
